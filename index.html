@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css"/>
+</head>
+<body>
+    <h2>Adamission Form Geekster</h2>
+    <form>
+        <!--
+            Last name,mail,contac number, date of birth,adress,degree,college name,year of gradutation,percentage,resume
+        -->
+        <div>
+        <input type="text" class="inline" name="f_name" placeholder="First Name"/>
+        <input type="text"  class="inline" name="l_name" placeholder="Last Name"/>
+        <br>
+
+        <input type="text" class="inline" name="mail" placeholder="Email ID"/>
+        <input type="number" class="inline" name="phone" placeholder="phone Number" required pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"/>
+        <br>
+        <select class="inline" name="gender"><option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+        <input type="date" class="inline" name="date-of-birth" max="2022-01-01"/><br>
+        <textarea name="address" placeholder="Address" ></textarea>
+        <h2>Education info</h2>
+        <select name=" select degree">
+            <optgroup label="Bachelors">
+                <option>B.Tech</option>
+                <option>B.E</option>
+                <option>M.E</option>
+            </optgroup>
+            <optgroup label="Masters">
+                <option>M.tech</option>
+                <option>M.E</option>
+                <option>M.sc</option>
+            </optgroup>
+        </select>
+        <input type="text" name="college" placeholder="college name"/>
+        <input type="number" name="graduation_year" placeholder="year"/>
+        <input type="number" name="percentage" placeholder="percentage"/>
+        <input type="file"/>
+        <hr/>
+        <input class="inline" type="submit" value="Apply for Admission"/>
+        <input class="inline" type="reset"/>
+
+    </form>
+    </div>
+    
+</body>
+</html>

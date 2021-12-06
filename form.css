@@ -1,0 +1,11 @@
+input,select,textarea{
+    display: block;
+    margin:4px auto;
+}
+body{
+    text-align: center;
+    background: linear-gradient(45deg,red,rgb(17, 17, 17),yellow);
+}
+.inline{
+    display: inline;
+}
